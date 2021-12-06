@@ -1,11 +1,11 @@
 {
-  "name": "--libraryname--",
+  "name": "tree-practice",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "main": "dist/--libraryname--.umd.js",
-  "module": "dist/--libraryname--.es5.js",
-  "typings": "dist/types/--libraryname--.d.ts",
+  "main": "dist/tree-practice.umd.js",
+  "module": "dist/tree-practice.es5.js",
+  "typings": "dist/types/tree-practice.d.ts",
   "files": [
     "dist"
   ],
