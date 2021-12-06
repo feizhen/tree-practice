@@ -1,3 +1,4 @@
+/** 简单的树结构 */
 export interface TreeStruct {
   title: string
   children?: TreeStruct[]

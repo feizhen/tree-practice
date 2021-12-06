@@ -80,33 +80,33 @@ describe('getLevelContent unit test', () => {
 
   it('case5: return correct', () => {
     const input: TreeStruct = {
-      title: 'root',
+      title: 'a',
       children: [
         {
-          title: 'node1',
+          title: 'b',
           children: [
             {
-              title: 'leaf1'
+              title: 'c'
             },
             {
-              title: 'leaf2'
+              title: 'd'
             }
           ]
         },
         {
-          title: 'node2',
+          title: 'e',
           children: [
             {
-              title: 'leaf3'
+              title: 'f'
             },
             {
-              title: 'node3',
+              title: 'g',
               children: [
                 {
-                  title: 'leaf4'
+                  title: 'h'
                 },
                 {
-                  title: 'leaf5'
+                  title: 'i'
                 }
               ]
             }
@@ -116,10 +116,10 @@ describe('getLevelContent unit test', () => {
     }
     const maxDeep = 4
     const output: string[][] = [
-      ['root', '', '', '', ''],
-      ['node1', '', 'node2', '', ''],
-      ['leaf1', 'leaf2', 'leaf3', 'node3', ''],
-      ['', '', '', 'leaf4', 'leaf5']
+      ['a', '', '', '', ''],
+      ['b', '', 'e', '', ''],
+      ['c', 'd', 'f', 'g', ''],
+      ['', '', '', 'h', 'i']
     ]
     expect(getLevelContent(input, maxDeep)).toEqual(output)
   })
