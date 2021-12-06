@@ -15,14 +15,14 @@ interface TreeStruct {
 需要对这颗树进行遍历，生成一个 `m*n` 的矩阵，其中:
 
 - `m` 代表树的叶子节点数
-- `n` 代码树的深度
+- `n` 指定的最大深度
 
 例如：
 
 输入为：
 
 ```js
-{
+const tree = {
   title: 'a',
   children: [
     {
@@ -57,6 +57,8 @@ interface TreeStruct {
     }
   ]
 }
+
+const maxDeep = 4;
 ```
 
 输出为：
